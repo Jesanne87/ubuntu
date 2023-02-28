@@ -52,7 +52,7 @@ Script ni akan install service VPN yang mainstream untuk kegunaan bypass Interne
 ## Installation
 Copy dan paste code di bawah ke dalam terminal lalu tekan enter.
 ```
-sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils screen curl && wget https://raw.githubusercontent.com/Jesanne87/ubuntu/main/setup.sh && chmod +x install.sh && sed -i -e 's/\r$//' install.sh && screen -S install ./install.sh
+sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils screen curl && wget https://raw.githubusercontent.com/Jesanne87/ubuntu/main/install.sh && chmod +x install.sh && sed -i -e 's/\r$//' install.sh && screen -S install ./install.sh
 
 ```
 
