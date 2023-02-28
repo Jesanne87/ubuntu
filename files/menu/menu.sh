@@ -1,6 +1,6 @@
 #!/bin/bash
 
-repoDir='https://raw.githubusercontent.com/iriszz-official/ubuntu/main/'
+repoDir='https://raw.githubusercontent.com/Jesanne87/ubuntu/main/'
 
 updateScript() {
 	echo -e ""

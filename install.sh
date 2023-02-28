@@ -12,7 +12,7 @@ PURPLE='\033[0;35m'
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 NC='\033[0m'
-repoDir='https://raw.githubusercontent.com/iriszz-official/ubuntu/main/'
+repoDir='https://raw.githubusercontent.com/Jesanne87/ubuntu/main/'
 netInt=$(ip link | awk -F: '$0 !~ "lo|vir|wl|^[^0-9]"{print $2;getline}' | head -n 1)
 
 # Check services
@@ -60,12 +60,7 @@ if [[ $EUID -ne 0 ]]; then
 	echo -e "${RED}This script must be run as root!${NC}\n"
 	exit 1
 fi
-apt update > /dev/null 2>&1
-apt install -y virt-what > /dev/null 2>&1
-if ! [[ "$(virt-what)" == "kvm" || "$(virt-what)" == "hyperv" ]]; then
-	echo -e "${RED}This script is only for KVM virtualization.${NC}\n"
-	exit 1
-fi
+
 os_check
 
 # Update packages
