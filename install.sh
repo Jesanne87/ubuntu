@@ -390,11 +390,11 @@ touch /voidvpn/wireguard/wireguard-clients.txt
 checkRun wg-quick@wg0
 
 # Install Speedtest CLI
-echo -e "${PURPLE}[+] Installing Speedtest CLI ...${NC}"
-sleep 1
-curl -s https://install.speedtest.net/app/cli/install.deb.sh | bash > /dev/null 2>&1
-apt install -y speedtest > /dev/null 2>&1
-checkInstall speedtest
+#echo -e "${PURPLE}[+] Installing Speedtest CLI ...${NC}"
+#sleep 1
+#curl -s https://install.speedtest.net/app/cli/install.deb.sh | bash > /dev/null 2>&1
+#apt install -y speedtest > /dev/null 2>&1
+#checkInstall speedtest
 
 # Install fail2ban
 echo -e "${PURPLE}[+] Installing Fail2Ban ...${NC}"
